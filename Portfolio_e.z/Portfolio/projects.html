@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Ermiyas Zewdu</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1f1f1f, #3a3a3a);
+            color: #fff;
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: center;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 34px;
+            color: #00ff00;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: #00ff00;
+            transform: scale(1.1);
+        }
+
+        /* Projects Section */
+        #projects {
+            padding: 50px 20px;
+        }
+
+        h2 {
+            font-size: 28px;
+            font-weight: 700;
+            color: #00ff00;
+            margin-bottom: 30px;
+        }
+
+        .project-card {
+            background: rgba(0, 0, 0, 0.7);
+            margin: 20px auto;
+            padding: 30px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 0 15px rgba(0, 255, 128, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(0, 255, 128, 0.7);
+        }
+
+        .project-card h3 {
+            font-size: 24px;
+            color: #00ff00;
+            margin-bottom: 15px;
+        }
+
+        .project-card p {
+            color: #ccc;
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .project-card a {
+            color: #00ff00;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .project-card a:hover {
+            color: #fff;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+            }
+
+            .project-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projects</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li> 
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="certificates.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="projects">
+        <h2>My Work</h2>
+
+        <!-- Project 1 -->
+        <div class="project-card">
+            <h3>Project 1: CRUD Web Application</h3>
+            <p>CRUD Web Application built with Angular & Firebase. The app allows users to perform Create, Read, Update, and Delete operations with ease.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <!-- Add more projects here -->
+        <div class="project-card">
+            <h3>Project 2: E-commerce Website</h3>
+            <p>Built an E-commerce website with ReactJS and Node.js, featuring product search, a shopping cart, and a payment gateway.</p>
+            <a href="#">View Project</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Project 3: Personal Portfolio</h3>
+            <p>This website showcases my projects and provides information about my skills and experiences. It was built using HTML, CSS, and JavaScript.</p>
+            <a href="https://ermiyas-portfolio.netlify.app/">View Project</a>
+        </div>
+    </section>
+</body>
+</html>

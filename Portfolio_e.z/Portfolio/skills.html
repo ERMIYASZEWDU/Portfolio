@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills - Ermiyas Zewdu</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.3s ease-in-out;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            text-align: center;
+            position: relative;
+        }
+
+        header h1 {
+            font-size: 34px;
+            color: #00ff00;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding-top: 15px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: #bbb;
+            text-decoration: none;
+            font-size: 16px;
+            padding: 10px;
+            transition: color 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        nav ul li a:hover {
+            color: #00ff00;
+            transform: scale(1.1);
+        }
+
+        /* Skills Section */
+        #skills {
+            margin: 50px auto;
+            max-width: 1200px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 255, 128, 0.5);
+            animation: fadeInUp 1.2s ease-in-out;
+        }
+
+        h2 {
+            color: #00ff00;
+            font-size: 28px;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: center;
+        }
+
+        .skills-card {
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 128, 0.5);
+            width: 300px;
+            animation: fadeInUp 1.4s ease-in-out;
+        }
+
+        .skills-card h3 {
+            color: #00ff00;
+            font-size: 24px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .skills-card ul {
+            list-style: none;
+        }
+
+        .skills-card li {
+            color: #ccc;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .skill-item h4 {
+            color: #00ff00;
+            margin-top: 30px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        /* Contact Button */
+        .btn {
+            display: block;
+            margin-top: 40px;
+            text-align: center;
+            padding: 12px 30px;
+            background: linear-gradient(to right, #3711c2, #00ff00);
+            color: white;
+            font-size: 18px;
+            border-radius: 8px;
+            text-decoration: none;
+            width: 100%;
+            transition: transform 0.3s, background 0.3s ease-in-out;
+        }
+
+        .btn:hover {
+            background: linear-gradient(to right, #15ff08, #06f816);
+            transform: scale(1.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .skills-card {
+                width: 80%;
+                margin-bottom: 20px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .contact-item {
+                flex-direction: column;
+                gap: 5px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>My Skills</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="skills">
+        <h2>⚡ My Skills</h2>
+
+        <div class="skills-container">
+            <!-- Frontend Skills -->
+            <div class="skills-card">
+                <h3>Frontend Development</h3>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React.js</li>
+                    <li>Angular</li>
+                    <li>Vue.js</li>
+                </ul>
+                <div class="skill-item">
+                    <h4>Graphic Design</h4>
+                    <ul>
+                        <li>Adobe Photoshop</li>
+                        <li>Illustrator</li>
+                        <li>Figma</li>
+                        <li>Sketch</li>
+                        <li>UI/UX Design</li>
+                        <li>Web & Mobile App Design</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skills-card">
+                <h3>Backend Development</h3>
+                <ul>
+                    <li>Node.js</li>
+                    <li>Express.js</li>
+                    <li>PHP</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>MySQL</li>
+                </ul>
+                <div class="skill-item">
+                    <h4>Networking & IT Support</h4>
+                    <ul>
+                        <li>Networking (CCNA, CCNP)</li>
+                        <li>Routing & Switching</li>
+                        <li>Firewalls & Security Protocols</li>
+                        <li>Server Setup & Management</li>
+                        <li>Cloud Computing (AWS, Azure)</li>
+                        <li>Technical Support & Troubleshooting</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Tools & Other Skills -->
+            <div class="skills-card">
+                <h3>Tools & Other Skills</h3>
+                <ul>
+                    <li>Git/GitHub</li>
+                    <li>Docker</li>
+                    <li>Postman</li>
+                    <li>VS Code</li>
+                    <li>Webpack</li>
+                </ul>
+                <div class="skill-item">
+                    <h4>Soft Skills</h4>
+                    <ul>
+                        <li>Problem-Solving</li>
+                        <li>Effective Communication</li>
+                        <li>Time Management</li>
+                        <li>Team Collaboration</li>
+                        <li>Adaptability</li>
+                        <li>Critical Thinking</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Button to Learn More -->
+        <a href="contact.html" class="btn">Contact Me</a>
+    </section>
+</body>
+
+</html>

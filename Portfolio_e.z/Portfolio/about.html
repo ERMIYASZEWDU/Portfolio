@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Ermiyas Zewdu</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #111;
+            color: white;
+            text-align: center;
+            transition: background 0.5s ease-in-out, color 0.5s ease-in-out;
+        }
+
+        /* Header */
+        header {
+            background: #222;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0px 4px 8px rgba(0, 255, 128, 0.2);
+        }
+
+        header h1 {
+            font-size: 40px;
+            font-weight: bold;
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        /* Navigation Menu */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            padding-top: 10px;
+            animation: fadeIn 1.2s ease-in-out;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 32px;
+            padding: 8px 12px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav ul li a:hover {
+            color: #03fd13;
+            text-shadow: 0px 0px 8px #03fd13;
+        }
+
+        /* Section Containers */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(34, 34, 34, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 255, 128, 0.5);
+            text-align: left;
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+        }
+
+        /* Heading & Paragraph Styles */
+        h2, h3 {
+            text-align: center;
+            color: #03fd13;
+            margin-bottom: 10px;
+            font-size: 22px;
+        }
+
+        p, ul {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #f8f2f0;
+        }
+
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul li {
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        ul li:hover {
+            transform: translateX(10px);
+            color: #03fd13;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-20px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes zoomIn {
+            from { transform: scale(0.8); opacity: 0; }
+            to { transform: scale(1); opacity: 1; }
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blinkCaret {
+            50% { border-color: transparent; }
+        }
+
+        /* Applying Animations */
+        .fade-in {
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        .slide-in {
+            animation: slideIn 1s ease-in-out forwards;
+        }
+
+        .zoom-in {
+            animation: zoomIn 1s ease-in-out forwards;
+        }
+
+        .typing {
+            display: inline-block;
+            width: 0;
+            white-space: nowrap;
+            border-right: 2px solid #03fd13;
+            animation: typing 2s steps(30) 1s forwards, blinkCaret 0.75s step-end infinite;
+            font-size: 18px;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .skill-item {
+            background-color: rgba(34, 34, 34, 0.9);
+            padding: 10px 20px;
+            border-radius: 8px;
+            border: 2px solid #03fd13;
+            font-size: 18px;
+            color: white;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%;
+                padding: 15px;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                padding: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>About Me</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="certificates.html">Certifications</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="about">
+        <div class="container fade-in">
+            <h2>About Me</h2>
+            <p>Hi, I'm <strong>Ermiyas Zewdu</strong>,<br> A Full-Stack Developer and Graphic Designer with a strong passion for solving problems and creating seamless, user-friendly digital experiences.</p>
+        </div>
+    </section>
+
+    <section id="education">
+        <div class="container slide-in">
+            <h3>📚 Education</h3>
+            <p>I hold a Bachelor's Degree in Computer Science from <strong>Ambo University</strong>. I gained practical experience in web development, networking, and IT support.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container zoom-in">
+            <h3>💻 My Skills</h3>
+            <p class="typing">Full-stack development, Graphic Design, Web Development, UI/UX, Network Administration.</p>
+            <div class="skills-list">
+                <div class="skill-item">HTML</div>
+                <div class="skill-item">CSS</div>
+                <div class="skill-item">JavaScript</div>
+                <div class="skill-item">React</div>
+                <div class="skill-item">Node.js</div>
+                <div class="skill-item">Angular</div>
+                <div class="skill-item">PHP</div>
+                <div class="skill-item">MySQL</div>
+                <div class="skill-item">Adobe Photoshop</div>
+                <div class="skill-item">Adobe Illustrator</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="passion">
+        <div class="container fade-in">
+            <h3>🎯 What Drives Me</h3>
+            <p>I enjoy the challenge of transforming complex ideas into intuitive solutions, whether in **responsive websites, stunning designs, or backend systems**.</p>
+        </div>
+    </section>
+
+    <section id="certifications">
+        <div class="container zoom-in">
+            <h3>🎓 Certifications & Achievements</h3>
+            <ul>
+                <li>Certified in Web Development - Udacity</li>
+                <li>Android Development - Udacity</li>
+                <li>Data Analysis - Udacity</li>
+                <li>AI - Udacity</li>
+                <li>Java, C#, HTML - SoloLearn</li>
+                <LI>Adobe Photoshop and Adobe Illustrator - Udemy</LI>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fun-facts">
+        <div class="container slide-in">
+            <h3>🎉🔥 Fun Facts</h3>
+            <ul>
+                <li>I’m always learning new programming languages to stay ahead of trends.</li>
+                <li>I enjoy traveling and exploring new cultures in my free time.</li>
+            </ul>
+        </div>
+    </section>
+
+</body>
+</html>
